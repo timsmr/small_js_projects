@@ -1,0 +1,63 @@
+/* .col {
+    background-color: blanchedalmond;
+    border: 1px solid brown;
+    border-radius: 5px;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   background:lightblue !important;
+}
+
+.container {
+    position: relative;
+    max-width: 98vh;
+}
+
+.box {
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 100%;
+}
+
+.box::before {
+    content: var(--box-value) !important;
+    font-size: 1.3em;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+
+.box-closed {
+    background: #999;
+    cursor: pointer;
+}
+
+.box-success {
+    background: #99CC66;
+    color: white;
+}
+
+
+.row * {
+    margin-top: calc(var(--bs-gutter-x) * .5) !important;
+}
+
+.row {
+    margin-bottom: calc(var(--bs-gutter-x) * .5) !important;
+}
+
+.form {
+    margin-top: 40vh;
+}
+
+.end-game {
+    text-align: center;
+    color: white;
+    margin-top: 40%;
+    cursor: pointer;
+}
