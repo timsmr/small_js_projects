@@ -1,0 +1,7 @@
+.table-heading {
+    cursor: pointer;
+}
+
+.table-heading:hover {
+    background: var(--bs-gray-800);
+}
